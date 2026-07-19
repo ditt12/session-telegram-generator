@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Telegram Session Generator</title>
+
+<style>
+*{
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#080808;
+    color:white;
+}
+
+.card{
+    width:380px;
+    padding:30px;
+    border-radius:20px;
+    background:#161616;
+    border:1px solid #333;
+}
+
+.logo{
+    width:70px;
+    height:70px;
+    margin:auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:50%;
+    background:#0088cc;
+    font-size:35px;
+}
+
+h1{
+    text-align:center;
+    margin-top:20px;
+}
+
+p{
+    text-align:center;
+    color:#aaa;
+    font-size:14px;
+}
+
+input{
+    width:100%;
+    padding:13px;
+    margin-top:12px;
+    border-radius:10px;
+    border:none;
+    outline:none;
+    background:#222;
+    color:white;
+}
+
+button{
+    width:100%;
+    margin-top:20px;
+    padding:13px;
+    border:none;
+    border-radius:10px;
+    background:#0088cc;
+    color:white;
+    font-weight:bold;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<div class="logo">
+✈️
+</div>
+
+<h1>
+Telegram Session
+</h1>
+
+<p>
+Generate Telethon Session File
+</p>
+
+
+<form action="/send_code" method="POST">
+
+<input 
+type="number"
+name="api_id"
+placeholder="API ID"
+required>
+
+
+<input 
+type="text"
+name="api_hash"
+placeholder="API HASH"
+required>
+
+
+<input 
+type="text"
+name="phone"
+placeholder="+628xxxxxxxxxx"
+required>
+
+
+<button type="submit">
+Kirim OTP
+</button>
+
+</form>
+
+
+</div>
+
+</body>
+</html>
